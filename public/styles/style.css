@@ -1,0 +1,45 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 30%, rgba(207,250,254,1) 100%);
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    form {
+        width: 500px;
+        margin: 1rem auto;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        border: solid 1px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+        display: flex;
+        flex-direction: column;
+
+        legend {
+            font-size: 1.5rem;
+            text-align: center;           
+        }
+
+        input {
+            width: calc(100% - 2rem);
+            margin: auto;
+            margin-bottom: 0.5rem;
+
+            border-radius: 2rem;
+            border: solid 1px rgba(0, 0, 0, 0.08);
+            cursor: pointer;        
+
+            &::file-selector-button {                
+                background-color: rgba(76, 118, 173, 0.171);
+                padding: 0.5rem 1rem;
+                width: 100%;
+                cursor: pointer;               
+
+                border-radius: 2rem;
+                border: solid 1px rgba(0, 0, 0, 0.08);                
+            }
+        }
+    }
+
+}
